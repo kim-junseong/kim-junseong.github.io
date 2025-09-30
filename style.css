@@ -21,11 +21,10 @@ body         { background-color: white; }
 h1           { font-size: 1.75em; margin-top: 0em;    margin-bottom: 1em; }
 /*h2           { font-size: 1.25em; margin-top: 3.33em; margin-bottom: 0; border-bottom: 1px solid; }*/
 h2           { font-size: 1.25em; margin-top: 2.5em; margin-bottom: 0.5em; }
-h2           { display:block; width:100%; float:left; clear:both; }
+h2           { display:block; width:100%; float:left}
 /*ul 			 { padding-left: 10px; list-style-position: inside;}*/
 
 .container   { margin: 0 auto 0 auto; font-size: 1em; text-align: left; width: 680px; }
-.item 		 { clear: both; }         /* ← item 위로도 겹치지 않게 */
 .intro,
 .outro       { display: block; width: 100%; float: left; margin-top: 1.5em; margin-bottom: 0; }
 .intro       { margin-top: 3.33em; }
@@ -57,6 +56,9 @@ h2           { display:block; width:100%; float:left; clear:both; }
 	.item img  { width: 27%; margin-right: 2.7%; }
 	.intro img { width: 27%; margin-left: 2.7%; }
 	.item p    { width: 70%; }
+	.project p1 {width: 30%; margin-right: 5%; }
+	.project p2 {width: 30%; margin-right: 5%; }
+	.project p3 {width: 30%}
 }
 
 .list-item {
@@ -101,31 +103,3 @@ body { color: rgb(60, 60, 60); }
 h2 { border-bottom-color: rgb(60, 60, 60); }
 a { text-decoration: underline; color: inherit; }
 */
-
-/* ===== On-going Projects Layout ===== */
-.projects {
-	display: flex;
-	justify-content: space-around;
-	margin-bottom: 30px;
-  }
-  
-  .project {
-	text-align: center;
-	width: 30%;
-  }
-  
-  .pub-item {
-	display: flex;
-	align-items: flex-start;
-	margin-bottom: 20px;
-  }
-  
-  .pub-item img {
-	margin-right: 15px;
-	border: 1px solid #ddd;
-	border-radius: 5px;
-  }
-  
-  .pub-item p {
-	margin: 0;
-  }
