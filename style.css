@@ -56,9 +56,7 @@ h2           { display:block; width:100%; float:left}
 	.item img  { width: 27%; margin-right: 2.7%; }
 	.intro img { width: 27%; margin-left: 2.7%; }
 	.item p    { width: 70%; }
-	.project p1 {width: 30%; margin-right: 5%; }
-	.project p2 {width: 30%; margin-right: 5%; }
-	.project p3 {width: 30%}
+	.project p { width: 30%; margin-right: 5%;}
 }
 
 .list-item {
