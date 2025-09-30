@@ -101,3 +101,47 @@ body { color: rgb(60, 60, 60); }
 h2 { border-bottom-color: rgb(60, 60, 60); }
 a { text-decoration: underline; color: inherit; }
 */
+
+/* ===== On-going Projects cards ===== */
+.projects {
+	display: flex;
+	gap: 16px;
+	margin-top: 8px;
+	flex-wrap: wrap;          /* 좁은 화면에서 자동 줄바꿈 */
+  }
+  
+  .project {
+	flex: 1 1 200px;          /* 3등분, 좁아지면 2/1열로 자연스럽게 */
+	border: 1px solid #e5e5e5;
+	border-radius: 8px;
+	padding: 16px;
+	text-align: center;
+	background: #fafafa;
+  }
+  
+  .project-title {
+	font-size: 1.05em;
+	line-height: 1.35em;
+	margin: 0 0 8px 0;
+  }
+  
+  .project-status {
+	color: #666;
+	font-size: 0.95em;
+  }
+  
+  /* ===== Publications notes(불릿) ===== */
+  .pub-notes {
+	clear: both;              /* 왼쪽 썸네일 float 영향 제거 */
+	margin: 8px 0 0 0;
+	padding-left: 18px;       /* 들여쓰기 */
+	list-style: disc;         /* 기본 동그라미 불릿 */
+  }
+  
+  /* 모바일 대응: 기존 미디어쿼리에 덧붙이기 */
+  @media only screen and (max-device-width: 480px) {
+	.projects { gap: 8px; }
+	.project { flex: 1 1 100%; padding: 12px; }
+	.project-title { font-size: 1em; }
+	.pub-notes { padding-left: 16px; }
+  }
