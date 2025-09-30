@@ -104,36 +104,28 @@ a { text-decoration: underline; color: inherit; }
 
 /* ===== On-going Projects Layout ===== */
 .projects {
-	clear: both;                 /* ← 이 줄이 핵심 */
 	display: flex;
-	justify-content: space-between;  /* 3개를 가로로 균등 배치 */
-	gap: 20px;                       /* 카드 사이 여백 */
-	margin: 20px 0;
+	justify-content: space-around;
+	margin-bottom: 30px;
   }
   
   .project {
-	flex: 1;                         /* 카드가 균등하게 넓이 차지 */
-	text-align: center;              /* 제목/상태 가운데 정렬 */
+	text-align: center;
+	width: 30%;
   }
   
-  .project-title {
-	font-size: 1.15em;
-	line-height: 1.4em;
-	margin-bottom: 0.4em;
+  .pub-item {
+	display: flex;
+	align-items: flex-start;
+	margin-bottom: 20px;
   }
   
-  .project-status {
-	font-size: 0.95em;
-	color: gray;
+  .pub-item img {
+	margin-right: 15px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
   }
   
-  /* 모바일 대응 */
-  @media only screen and (max-device-width: 480px) {
-	.projects {
-	  flex-direction: column;   /* 세로 정렬 */
-	  gap: 10px;
-	}
-	.project {
-	  text-align: left;        /* 모바일에서는 왼쪽 정렬 */
-	}
+  .pub-item p {
+	margin: 0;
   }
